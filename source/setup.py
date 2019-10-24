@@ -12,5 +12,5 @@ from os import path
 
 def setup(app):
     app.add_html_theme('name_of_theme', path.abspath(path.dirname(__file__)))
-    app.add_javascript("custom.js")
-    app.add_stylesheet("custom.css")
+    app.add_javascript("js/custom.js")
+    app.add_stylesheet("css/custom.css")
