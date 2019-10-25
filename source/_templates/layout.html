@@ -1,7 +1,22 @@
 {% extends "!layout.html" %}
 
 {% block footer %}
-{{ super() }}
+    {{ super() }}
+    <!-- {{ js_tag('mxgraph/javascript/mxClient.js') }} -->
+{% endblock %}
+
+{% block htmltitle %}
+    {{ super() }}
 <script type="text/javascript">
+    mxBasePath = '../_static';
+        
+    // Disables synchronous loading of resources
+    mxLoadResources = false;
+    mxLoadStylesheets = false;
 </script>
 {% endblock %}
+
+
+
+
+

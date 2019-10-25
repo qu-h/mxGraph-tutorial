@@ -1,6 +1,10 @@
 hello world
 ===========
 
+.. toctree::
+    :maxdepth: 3
+    .. contents:: :local:
+
 .. code:: javascript
 
     function main(container)
@@ -51,5 +55,7 @@ hello world
             style="position:relative;overflow:hidden;width:321px;height:241px;background:url('editors/images/grid.gif');cursor:default;">
         </div>
     </body>
+
+.. include:: ../demo/area.rst
 
 

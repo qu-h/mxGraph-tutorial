@@ -18,3 +18,7 @@ cite {
 p {
     margin-bottom: 0;
 }
+
+.demo-area {
+    background: url(../images/grid.gif);;
+}

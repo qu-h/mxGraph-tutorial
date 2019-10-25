@@ -78,11 +78,32 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ['_static']
 
 html_js_files = [
+    'mxgraph/javascript/mxClient.js',
+    'js/demo.js',
     'js/quan-ict.js',
+    
 ]
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
 html_css_files = [
     'css/quan-ict.css',
+    # 'css/common.css'
 ]
+
+from pygments import token
+from pygments.lexer import RegexLexer
+from sphinx.highlighting import lexers
+
+class html_demo(RegexLexer):
+    name = 'html_demo   '
+
+    tokens = {
+        'root': [
+            (r'MyKeyword', token.Keyword),
+            (r'[a-zA-Z]', token.Name),
+            (r'\s', token.Text)
+        ]
+    }
+
+lexers['html-demo'] = html_demo(startinline=True)

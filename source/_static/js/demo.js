@@ -1,5 +1,4 @@
-function main(container)
-{
+function hello_world(container) {
     // Checks if the browser is supported
     if (!mxClient.isBrowserSupported())
     {
@@ -35,4 +34,6 @@ function main(container)
             graph.getModel().endUpdate();
         }
     }
-};
+
+}
+

@@ -14,7 +14,9 @@ mxGraph Tutorial's documentation!
     layout/mxCircleLayout
     helper/mxClient
     examples/hello-world
-
+    examples/hierarchical-layout
+    examples/codec
+    examples/dynamic-loading
 
 Overview
 --------
