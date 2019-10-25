@@ -17,6 +17,7 @@ mxGraph Tutorial's documentation!
     examples/hierarchical-layout
     examples/codec
     examples/dynamic-loading
+    examples/dynamic-style
 
 Overview
 --------
@@ -38,3 +39,4 @@ Indices and tables
 
 .. https://jgraph.github.io/mxgraph/docs/js-api/files/index-txt.html
 .. https://medium.com/@richdayandnight/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b
+.. http://dev.cs.ovgu.de/java/jgraph/tutorial/t1.html

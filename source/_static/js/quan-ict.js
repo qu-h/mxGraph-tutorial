@@ -2,23 +2,21 @@ var demo = {
     init: function() {
         this.generate();
 
-        let basename = this.getFilename();
-
-        // mxClient.link('stylesheet', mxClient.basePath + '/css/common.css');
-        console.log("basename",basename)
-        if( ['hierarchical-layout','codec','dynamic-loading'].indexOf(basename) > -1 ){
+        let dir = this.getDir();
+        if( dir == 'examples'){
+            let basename = this.getFilename();
+            console.log("basename",basename)
             demo.addScript("../_static/demo/"+basename+".js");
+
+            // find object
+            var fn = window[basename];
+
+            // is object a function?
+            if (typeof fn === "function"){
+                let demo = document.getElementById('graphContainer')
+                fn(demo);
+            };
         }
-        
-        // find object
-        var fn = window[basename];
-
-        // is object a function?
-        if (typeof fn === "function"){
-            let demo = document.getElementById('graphContainer')
-            fn(demo);
-        };
-
     },
     
     getFilename : ()=>{
@@ -27,6 +25,14 @@ var demo = {
                 basename = filename.substring(0,filename.lastIndexOf('.'));
                 // basename = basename.replace(['-'],'_');
         return basename;
+    },
+
+    getDir:()=>{
+        let url = window.location.pathname,
+                path = url.substring(0,url.lastIndexOf('/')),
+                dir_name = path.substring(path.lastIndexOf('/')+1);
+        
+        return dir_name;
     },
 
     generate:()=>{

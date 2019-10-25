@@ -1,5 +1,6 @@
 Codec
 =====
+
 This graph is embedded in the page.
 
 .. toctree::

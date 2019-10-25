@@ -5,7 +5,3 @@ Hierarchical Layout
     :maxdepth: 3
 
 .. include:: ../demo/area.rst
-
-
-
-

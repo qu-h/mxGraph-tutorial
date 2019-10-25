@@ -6,8 +6,3 @@ Dynamic Loading
     :maxdepth: 3
 
 .. include:: ../demo/area.rst
-
-
-
-
-
