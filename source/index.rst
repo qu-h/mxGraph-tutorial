@@ -7,17 +7,28 @@ mxGraph Tutorial's documentation!
 ============================================
 
 .. toctree::
+    :glob:
     :maxdepth: 3
     :caption: Contents:
+    :name: mastertoc
 
     editor/mxDefaultKeyHandler
     layout/mxCircleLayout
     helper/mxClient
-    examples/hello-world
-    examples/hierarchical-layout
-    examples/codec
-    examples/dynamic-loading
-    examples/dynamic-style
+    examples/*
+    
+
+.. glossary::
+
+   term 1 : A
+   term 2 : B
+      Definition of both terms.
+
+.. index::
+   single: execution; context
+   module: __main__
+   module: sys
+   triple: module; search; path
 
 Overview
 --------
